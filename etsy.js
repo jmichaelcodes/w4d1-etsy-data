@@ -12,7 +12,7 @@ function average(item) {
     totalPrices += item.price;
 }
 
-console.log("Average price: " + totalPrices / items.length);
+console.log("Average price: $" + Math.ceil(totalPrices / items.length * 100) / 100);
 
 // Between 14 and 18
 items.forEach(betweenPrices);
